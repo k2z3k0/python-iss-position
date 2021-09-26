@@ -7,5 +7,5 @@ count = 0
 while (count < 3):
     query = {}
     response = requests.get('http://api.open-notify.org/astros.json', params=query)
-    print(response.response())
+    print(response.json())
 
